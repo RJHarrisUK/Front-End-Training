@@ -22,7 +22,20 @@ function getAllClassrooms() {
     }
 
     req.open("GET", "http://localhost:8080/APIDevAssessment/api/classroom/getAllClassrooms");
-
     req.send("Get all classrooms");
-
+    console.log(req)
 }
+
+function createClassroom() {
+    let req = new XMLHttpRequest();
+
+    req.onload = function () {
+        let response = JSON.parse(req.responseText);
+    }
+
+    req.open("POST", "http://localhost:8080/APIDevAssessment/api/classroom/createClassroom");
+    req.send("Get all classrooms");
+    console.log(req)
+}
+
+
