@@ -12,6 +12,7 @@
 <script src="functions.js" type="text/javascript"></script>
 
 <body>
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Calculator</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -49,18 +50,23 @@
             </form>
         </div>
     </nav>
+    <!-- Central Container -->
     <div class="mx-auto" style="width: 200px;">
         <div class="container">
+            <!-- Start of Calculator Forms -->
+            <!-- Number 1 -->
             <div class="form-group">
                 <label for="number1"></label>
                 <input type="text" class="form-control" id="num1" aria-describedby="num1" placeholder="Number 1">
                 <small id="num1" class="form-text text-muted">Enter your first number.</small>
             </div>
+            <!-- Number 2 -->
             <div class="form-group">
                 <label for="number2"></label>
                 <input type="text" class="form-control" id="num2" aria-describedby="num2" placeholder="Number 2">
                 <small id="num2" class="form-text text-muted">Enter your second number.</small>
             </div>
+            <!-- Grouping of Operator Buttons -->
             <div class="btn-group" role="group" aria-label="Operators">
                 <button class="btn btn-secondary" onclick="calculate('1')">+</button>
                 <button class="btn btn-secondary" onclick="calculate('2')">-</button>
@@ -69,11 +75,13 @@
             </div>
             </br>
             <div class="form-group">
+                <!-- Result Output -->
                 <label for="number3"></label>
                 <input type="text" class="form-control" id='result' readonly aria-describedby="result"
                     placeholder="Result">
                 <small id="result" class="form-text text-muted">Your result.</small>
             </div>
+            <!-- Bootstrap script inserts -->
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
                 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
                 crossorigin="anonymous"></script>
