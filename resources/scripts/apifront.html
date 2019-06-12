@@ -7,22 +7,35 @@
 </head>
 
 <body>
+    <!-- input form for account id -->
     <div class="form-group">
         <label for="ClasroomID"></label>
         <input type="text" class="form-control" id="id" aria-describedby="id" placeholder="ID Number">
         <small id="id" class="form-text text-muted">Enter Classroom ID.</small>
+
+        <label for="ClasroomTrainer"></label>
+        <input type="text" class="form-control" id="trainer" aria-describedby="trainer" placeholder="Trainer Name">
+        <small id="trainer" class="form-text text-muted">Enter Classroom Trainer.</small>
     </div>
-    <!-- get account by id -->
+    <!-- get classroom by id -->
     <button class="btn btn-secondary" onclick="getClassroomById()">Get Classroom By Id</button>
-    <!-- get all accounts -->
+    <!-- get all classrooms -->
     <button class="btn btn-secondary" onclick="getAllClassrooms()">Get All Classrooms</button>
-
-
-    <!-- create account -->
-    <!-- delete account by id -->
-
-
+    <!-- create classroom -->
+    <button class="btn btn-secondary" onclick="createClassroom()">Create Classroom</button>
+    <!-- update classroom -->
+    <button class="btn btn-secondary" onlcick="updateClassroom()">Update Classroom</button>
+    <!-- delete classroom by id -->
+    <button class="btn btn-secondary" onclick="deleteClassroom()">Delete Classroom By ID</button>
     </div>
+    <!-- output form -->
+    <div class="form-group">
+        <!-- Result Output -->
+        <!-- <label for="ResultBox"></label>
+        <input type="text" class="form-control" id='result' readonly aria-describedby="result" placeholder="Result">
+        <small id="result" class="form-text text-muted">Returned Data.</small> -->
+    </div>
+
     <!-- Bootstrap script inserts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
